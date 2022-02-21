@@ -1,25 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
-
+//https://backend-edw.herokuapp.com/usuario
+import React from 'react';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <p className='Title'>Inicio de Sesion</p>
+                <input type='email' className='Email' placeholder='Correo Electronico'></input>
+                <input type='password' className='Password' placeholder='Contraseña'></input>
+            <button className='ButtonLogin'>Iniciar Sesion</button>
     </div>
   );
 }
-
 export default App;
